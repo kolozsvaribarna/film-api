@@ -1,0 +1,32 @@
+GET http://localhost:8001/films/4
+Accept: application/json
+
+###
+POST http://localhost:8001/films
+Content-Type: application/json
+
+{
+  "title": "Dune: Part One",
+  "length": "155",
+  "poster_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrky3y1I81cVIH_0DuFPnSq488AFpqmsv1hWUCQg4mSLezK0EHd8qcSMp3c8_ay9RWzu_DUTs_ZrfIbbeHPNUDohhXsFEuQ4wDJmZAEZo&s=10",
+  "language": "EN",
+  "subtitles": "1",
+  "release_year": "2021",
+  "studio_id": "1"
+}
+
+###
+POST http://localhost:8001/studios
+Content-Type: application/json
+
+{
+  "name" : "Lionsgate Studios"
+}
+
+###
+
+DELETE http://localhost:8001/studios/7
+Content-Type: application/json
+
+###
+
