@@ -7,10 +7,6 @@ class GenreRepository extends BaseRepository
 
     public function create(array $data): ?int
     {
-        if (!isset($data['id'])) {
-            throw new \Exception("GenreRepository error: id is required.");
-        }
-
         return parent::create($data);
     }
 
